@@ -121,7 +121,7 @@ public class Diameter_of_BinaryTree {
 	   DiaPair rp= Diameter2(root.right);
 	   
 	   DiaPair my=new DiaPair();
-	   my.ht=lp.ht+rp.ht+1;
+	   my.ht=Math.max(lp.ht,rp.ht)+1;
 	   my.Dia= Math.max(lp.ht+rp.ht+2, Math.max(lp.Dia, rp.Dia));
 	   
 	   return my;
